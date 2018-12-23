@@ -1,11 +1,8 @@
 transE by Python3
 ======
-Train transE.py and test test.py.  
-  
-If shut down during training, also can run reTrans.py to continue.   
-  
-Finally, also can use pca.py to dimensionality reduction, and plot in .png  
-
+训练： transE.py 
+测试： test.py
+降维：pca.py
 
 THANKS
 ======
