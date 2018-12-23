@@ -1,8 +1,12 @@
 transE by Python3
 ======
 训练： transE.py 
+
 测试： test.py
+
 降维：pca.py
+
+数据格式为：头实体 尾实体 关系
 
 THANKS
 ======
