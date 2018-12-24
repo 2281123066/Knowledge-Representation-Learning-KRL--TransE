@@ -26,7 +26,7 @@ def plotV(a, labels):
     ax = fig.add_subplot(111)
     print("aaa")
     font = { 'fontname':'Tahoma', 'fontsize':0.5, 'verticalalignment': 'top', 'horizontalalignment':'center' }
-    ax.scatter(a[:,0], a[:,1], marker = ' ')
+    ax.scatter(a[:,0].tolist(), a[:,1].tolist(), marker = ' ')
     ax.set_xlim(-0.8,0.8)
     ax.set_ylim(-0.8,0.8)
     i = 0
@@ -48,8 +48,8 @@ def plotV(a, labels):
     print("ddd")
     plt.savefig('plot_with_labels', dpi = 3000, bbox_inches = 'tight' ,orientation = 'landscape', papertype = 'a0')
 if __name__ == '__main__':
-    dirEntity = "c:\\entityVector.txt"
-    dirRelation = "c:\\relationVector.txt"
+    dirEntity = "E:\\workplace_kdh\\KG\\transE\\train_result\\entityVector.txt"
+    dirRelation = "E:\\workplace_kdh\\KG\\transE\\train_result\\relationVector.txt"
     matEntity, nameEntity = loadData(dirEntity)
     matRelation, nameRelation = loadData(dirRelation)
     mat = row_stack((matEntity, matRelation))
