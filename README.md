@@ -6,7 +6,7 @@ transE by Python3
 
 降维：pca.py
 
-数据格式为：头实体 尾实体 关系
+数据格式为：head tail relation
 
 THANKS
 ======
